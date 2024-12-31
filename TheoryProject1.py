@@ -64,9 +64,9 @@ def CalulateGCD (A, B):
          R != 1
          print ("Error, invalid inputs")
         
-        
+    #else statement if the value of input A == input B
     else:
-        A=B
+        A==B
         print("you have inserted two similar numbers")
         
     
