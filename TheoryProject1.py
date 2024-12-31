@@ -37,13 +37,13 @@ def CalulateGCD (A, B):
         while R: 
             R = A % B
         
-        
-        if R == 1:
-            print ("Your inputs are valid!")
+    
+            if R == 1:
+                print ("Your inputs are valid!")
             
-        else: 
-         R != 1
-         print ("Error, invalid inputs")
+            else: 
+                R != 1
+                print ("Error, invalid inputs")
             
     #check if B is larger than A
     elif A<B:
@@ -68,7 +68,7 @@ def CalulateGCD (A, B):
         A==B
         print("you have inserted two similar numbers")
         
-    return
+    return R
 
     
         
