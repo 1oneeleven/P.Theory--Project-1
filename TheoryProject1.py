@@ -20,22 +20,37 @@ print ()
 #the following code is my FC723 portflio task 1
 
 #ask user for inputs A and B
+
 A = print (input("please enter a number:"))
 B = print (input("please enter a number:"))
-
 
 #Define a function to get calculate the large number by the smaller number to prove Relative prime numbers
 
 def CalulateGCD (A, B):
     
-    
     #check if A is larger than B 
     if A>B:
-        A/B == 0
+        R = ()
+        
+        while R: 
+            R = A % B
+        
+        
+        if R == 1:
+            print ("Your inputs are valid!")
+            
+        else: 
+         R != 1
+         print ("Error, invalid inputs")
+            
+        
+        
+    
         
     #check if B is larger than A
     elif A<B:
-        B/A == 0
+        A, B = B, A
+        
         
     else:
         print("you have inserted two similar numbers")
