@@ -13,3 +13,23 @@ print("this is my first push for this project")
 print("this is my second attempt to test pushing my file to github")
 
 print("test 3")
+
+#the following code if my FC723 portflio task 1
+
+
+A = print (input("please enter a number:")) 
+
+
+#Define a function to get calculate the large number by the smaller number to prove Relative prime numbers
+
+def GCD (A, B):
+    #check if A is larger than B 
+    if A>B:
+        A/B == 0
+        
+    #check if B is larger than A
+    elif A<B:
+        B/A == 0
+        
+    else:
+        print("you have inserted two similar numbers")
