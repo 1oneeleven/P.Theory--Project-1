@@ -30,8 +30,10 @@ def CalulateGCD (A, B):
     
     #check if A is larger than B 
     if A>B:
-        R = ()
         
+        #assign inital value of R as an empty variable
+        R = ()
+        #create a while loop to calculate GCD and get a remainder
         while R: 
             R = A % B
         
@@ -43,16 +45,13 @@ def CalulateGCD (A, B):
          R != 1
          print ("Error, invalid inputs")
             
-        
-        
-    
-        
     #check if B is larger than A
     elif A<B:
         A, B = B, A
-        
+
+        #assign inital value of R as an empty variable
         R = ()
-        
+
         while R: 
             R = A % B
         
@@ -69,6 +68,8 @@ def CalulateGCD (A, B):
         A==B
         print("you have inserted two similar numbers")
         
+    return
+
     
         
         
