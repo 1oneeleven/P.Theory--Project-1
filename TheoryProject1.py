@@ -36,6 +36,7 @@ def CalulateGCD (A, B):
             else: 
                 GCDlist[-1] != 1
                 print ("Error, invalid inputs")
+                break
             
     #check if B is larger than A
     elif A<B:
@@ -54,6 +55,8 @@ def CalulateGCD (A, B):
         else: 
          GCDlist[-1] != 1
          print ("Error, invalid inputs")
+         #stop the while loop for the elif code block where A<B
+         break
         
     #else statement if the value of input A == input B
     else:
