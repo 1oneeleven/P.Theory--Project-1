@@ -6,17 +6,6 @@ Created on Mon Dec 23 09:49:28 2024
 @author: alialshehhi
 """
 #this is my first programming theory git project (portfolia task 1)
-
-print("this is my first push for this project") 
-
-
-print("this is my second attempt to test pushing my file to github")
-
-print("test 3")
-
-print ()
-print ()
-
 #the following code is my FC723 portflio task 1
 
 #ask user for inputs A and B
@@ -32,17 +21,20 @@ def CalulateGCD (A, B):
     if A>B:
         
         #assign inital value of R as an empty variable
-        R = ()
+        GCDlist = ()
         #create a while loop to calculate GCD and get a remainder
-        while R: 
+        while GCDlist:
             R = A % B
+            GCDlist.append(R)
+            
+            
         
     
-            if R == 1:
+            if GCDlist[-1] == 1:
                 print ("Your inputs are valid!")
-            
+             
             else: 
-                R != 1
+                GCDlist[-1] != 1
                 print ("Error, invalid inputs")
             
     #check if B is larger than A
@@ -56,11 +48,11 @@ def CalulateGCD (A, B):
             R = A % B
         
         
-        if R == 1:
+        if GCDlist[-1] == 1:
             print ("Your inputs are valid!")
             
         else: 
-         R != 1
+         GCDlist[-1] != 1
          print ("Error, invalid inputs")
         
     #else statement if the value of input A == input B
