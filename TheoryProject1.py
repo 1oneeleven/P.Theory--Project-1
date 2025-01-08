@@ -10,12 +10,12 @@ Created on Mon Dec 23 09:49:28 2024
 
 #ask user for inputs A and B
 
-A = print (input("please enter a number:"))
-B = print (input("please enter a number:"))
+A = int(input("please enter a number:"))
+B = int(input("please enter a number:"))
 
 #Define a function to get calculate the large number by the smaller number to prove Relative prime numbers
 
-def CalulateGCD (A, B):
+def CalulateGCD(A, B):
     
     #assign inital value of list "GCDlist" as an empty list
     GCDlist = []
