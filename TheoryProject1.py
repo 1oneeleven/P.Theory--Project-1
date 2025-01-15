@@ -10,8 +10,8 @@ Created on Mon Dec 23 09:49:28 2024
 
 #ask user for inputs A and B
 
-A = int(input("please enter a number:"))
-B = int(input("please enter a number:"))
+A = int(input("please enter a number for input A:"))
+B = int(input("please enter a number for input B:"))
 
 #Define a function to get calculate the large number by the smaller number to prove Relative prime numbers
 
@@ -32,6 +32,8 @@ def CalulateGCD(A, B):
         #print the values of R in the code until the value of R equals to 0
         print(B)
         A, B = B, R
+        if R == 1:
+            print ("The inputs of A and B are both Prime Numbers since GCD is:")
         if R == 0:
             break
             
