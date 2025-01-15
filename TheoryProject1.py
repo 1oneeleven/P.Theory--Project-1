@@ -18,7 +18,7 @@ B = int(input("please enter a number:"))
 def CalulateGCD(A, B):
     
     #assign inital value of list "GCDlist" as an empty list
-    GCDlist = [0]
+    
     #check if A is larger than B 
     if A<B:
         A, B = B, A
@@ -26,26 +26,20 @@ def CalulateGCD(A, B):
         #assign inital value of R as an empty variable
         
         #create a while loop to calculate GCD and get a remainder
-        while True:
-            R = A % B
-            GCDlist.append(R)
-            #print the values of R in the code until the value of R equals to 0
-            print(R)
-            if R==0:
-                break
+    while True:
+        R = A % B
+          
+        #print the values of R in the code until the value of R equals to 0
+        print(B)
+        A, B = B, R
+        if R == 0:
+            break
             
-            if GCDlist[-1] == 1:
-                print ("Your inputs are valid!")
-             
-            else: 
-                GCDlist[-1] != 1
-                print ("Error, invalid inputs")
-                break
             
             
     
 
-    return R
+        return R
 
 CalulateGCD(A, B)    
         
