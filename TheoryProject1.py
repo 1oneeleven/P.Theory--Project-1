@@ -35,11 +35,9 @@ def CalulateGCD(A, B):
         if R == 0:
             break
             
-            
-            
     
 
-        return R
+    return R
 
 CalulateGCD(A, B)    
         
