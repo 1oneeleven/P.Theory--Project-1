@@ -18,9 +18,10 @@ B = int(input("please enter a number:"))
 def CalulateGCD(A, B):
     
     #assign inital value of list "GCDlist" as an empty list
-    GCDlist = []
+    GCDlist = [0]
     #check if A is larger than B 
-    if A>B:
+    if A<B:
+        A, B = B, A
         
         #assign inital value of R as an empty variable
         
@@ -28,10 +29,11 @@ def CalulateGCD(A, B):
         while GCDlist:
             R = A % B
             GCDlist.append(R)
+            #print the values of R in the code until the value of R equals to 0
+            print(R)
+            if R==0:
+                break
             
-            
-        
-    
             if GCDlist[-1] == 1:
                 print ("Your inputs are valid!")
              
@@ -40,37 +42,12 @@ def CalulateGCD(A, B):
                 print ("Error, invalid inputs")
                 break
             
-    #check if B is larger than A
-    elif A<B:
-        A, B = B, A
-
-        #assign inital value of R as an empty variable
-      
-
-        while GCDlist: 
-            R = A % B
-            GCDlist.append(R)
-        
-        
-            if GCDlist[-1] == 1:
-                print ("Your inputs are valid!")
             
-            else: 
-                GCDlist[-1] != 1
-                print ("Error, invalid inputs")
-                
-             #stop the while loop for the elif code block where A<B
-                break
-            
-        
-    #else statement if the value of input A == input B
-    else:
-        A==B
-        print("you have inserted two similar numbers")
-        
+    
+
     return R
 
-    
+CalulateGCD(A, B)    
         
         
 
