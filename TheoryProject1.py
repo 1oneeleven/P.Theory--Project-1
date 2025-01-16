@@ -13,19 +13,27 @@ Created on Mon Dec 23 09:49:28 2024
 A = int(input("please enter a number for input A:"))
 B = int(input("please enter a number for input B:"))
 
-#Define a function to get calculate the large number by the smaller number to prove Relative prime numbers
-
+#Define a function to get calculate the GCD using the Euclidean algorithm 
 def CalulateGCD(A, B):
     
-    #assign inital value of list "GCDlist" as an empty list
-    
-    #check if A is larger than B 
+
+    #check if A is larger than B, and reassign A and B if B is larger
     if A<B:
         A, B = B, A
         
         #assign inital value of R as an empty variable
-        
-        #create a while loop to calculate GCD and get a remainder
+
+    #If statement to Check if the Input A is negative and print that its invalid
+    if A<0:
+            print("invalid inputs")
+            return 
+    
+    #If statement to Check if the Input B is negative and print that its invalid
+    if B<0: 
+            print("invalid inputs")
+            return
+         
+    #create a while loop to calculate GCD and get a remainder using modulus
     while True:
         R = A % B
           
