@@ -40,6 +40,7 @@ def CalulateGCD(A, B):
         #print the values of R in the code until the value of R equals to 0
         print(B)
         A, B = B, R
+        #Print a message telling the user that their inputs are relaive prime numbers
         if R == 1:
             print ("The inputs of A and B are both Prime Numbers since GCD is:")
         if R == 0:
