@@ -44,12 +44,12 @@ def CalulateGCD(A, B):
         if R == 1:
             print ("The inputs of A and B are both Prime Numbers since GCD is:")
         if R == 0:
-            break
+            break  #end the function 
             
     
 
     return R
-
+ #calculates the Greatest common divisor of the two inputs from the user
 CalulateGCD(A, B)    
         
         
